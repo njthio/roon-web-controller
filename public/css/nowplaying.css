@@ -105,11 +105,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .lineMusicInfo {
     height: 10%;
     margin-bottom: 1%;
+    white-space: nowrap;
 }
 
 #controlsPlayer {
