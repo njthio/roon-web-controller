@@ -107,6 +107,7 @@ svg {
     -webkit-filter: drop-shadow(10px 10px 10px black);
     filter: drop-shadow(10px 10px 10px black);
     z-index:300;
+    overflow-y: scroll;
 }
 
 .overlayList {
