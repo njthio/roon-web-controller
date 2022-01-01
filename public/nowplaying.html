@@ -51,7 +51,10 @@
         fixFontSize();
       });
     </script>
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">  
+</head>
   <body>
     <div id="coverBackground"></div>
     <div id="colorBackground"></div>
@@ -109,7 +112,7 @@
         <div id="containerZoneList">
           <button
             type="button"
-            class="buttonZoneName textBold buttonAvailable colorChange"
+            class="buttonZoneName buttonAvailable colorChange"
             id="nowplayingZoneList"
             onclick="$('#overlayZoneList').show()"
             name="Zone List"
