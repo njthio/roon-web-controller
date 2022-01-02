@@ -61,7 +61,7 @@
 
     #containerMusicInfo {
         position: absolute;
-        top: 33px;
+        top: 20px;
         bottom: 0px;
         right: 0px;
         width: 49%;
@@ -161,7 +161,7 @@
 }
 
 #containerZoneList {
-    height: 10%;
+    height: 7%;
     display:flex;
     justify-content: center;
     align-items: center;
