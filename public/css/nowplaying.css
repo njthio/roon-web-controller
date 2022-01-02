@@ -65,13 +65,14 @@
         bottom: 0px;
         right: 0px;
         width: 49%;
+        margin-right: 1%;
         text-align: left;
     }
 
     .itemImage {
         border-radius: 5px;
-        max-width: 90%;
-        max-height: 90%;
+        max-width: 92%;
+        max-height: 92%;
     }
 }
 
@@ -150,10 +151,6 @@
 
 .settingsButton {
     width: 20%;
-}
-
-.settingsButton SVG {
-    height: 75%;
 }
 
 #containerTrackSeek {
