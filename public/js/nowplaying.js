@@ -433,7 +433,7 @@ function showIsPlaying(curZone) {
         } else {
           css.backgroundColor = "#232629";
           css.foregroundColor = "#eff0f1";
-          css.trackSeek = "rgba(239, 240, 241, 0.33)";
+          css.trackSeek = "rgba(239, 240, 241, 0.15)";
         }
         $("#colorBackground").show();
         showTheme("color");
@@ -815,7 +815,7 @@ function setTheme(theme) {
   if (theme == "dark" || theme === undefined) {
     css.backgroundColor = "#232629";
     css.foregroundColor = "#eff0f1";
-    css.trackSeek = "rgba(239, 240, 241, 0.33)";
+    css.trackSeek = "rgba(239, 240, 241, 0.15)";
 
     $("#coverBackground").hide();
     $("#colorBackground").hide();
@@ -826,7 +826,7 @@ function setTheme(theme) {
   } else if (theme == "cover") {
     css.backgroundColor = "#232629";
     css.foregroundColor = "#eff0f1";
-    css.trackSeek = "rgba(239, 240, 241, 0.33)";
+    css.trackSeek = "rgba(239, 240, 241, 0.15)";
 
     $("#coverBackground").show();
     $("#colorBackground").hide();
