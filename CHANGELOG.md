@@ -1,5 +1,24 @@
 # Change Log
 
+
+## Version 1.2.13.1
+
+Forked from the original repo at https://github.com/pluggemi/roon-web-controller with the following modifications done by Miemo Penttinen:
+
+Additional setting:
+- you can now toggle scrolling of longer titles and names on and off in the settings, defaults to scrolling still as earlier versions
+
+Visual tweaks:
+- changed the typeface to Lato so it's same as what Roon uses in their apps
+- changed the SVG icons to use rounded variants of the Material Icons to go visually better with the smoother shape of the Lato typeface
+- highlight color changed to Roon purple (or actually slightly brighter for better visibility)
+- tweaks to the visual hierarchy between the elements in #containerMusicInfo
+- tweaks to the album image style
+
+Bug fixes:
+- SVG icons size now much better even on newer Safari versions which had bad issues with earlier code
+
+
 ## Version 1.2.13
 
 NOTE: this is the final release of the 1.x series.

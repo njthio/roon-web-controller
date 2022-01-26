@@ -1,9 +1,9 @@
 {
   "name": "roon-web-controller",
-  "version": "1.2.13",
+  "version": "1.2.13.1",
   "description": "Roon Extension to create a web controller.",
   "main": "app.js",
-  "author": "Mike Plugge",
+  "author": "Mike Plugge (with minor tweaks by Miemo Penttinen on v1.2.13.1)",
   "license": "MIT",
   "engines": {
     "node": ">=6.x"
@@ -28,6 +28,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pluggemi/roon-web-controller.git"
+    "url": "https://github.com/miemo/roon-web-controller.git"
   }
 }
