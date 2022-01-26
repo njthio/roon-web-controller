@@ -6,3 +6,5 @@ config.json
 
 # Local server configuration file
 config/local.json
+
+package-lock.json
