@@ -128,10 +128,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .lineMusicInfo {
     margin-bottom: 1%;
+    white-space: nowrap;
 }
 
 #line1 {

@@ -57,6 +57,22 @@ function toggleScreensaver() {
   setCookie("settings['screensaverDisable']", settings.screensaverDisable);
 }
 
+function toggleScroll() {
+  if ($("#scrollSwitch").is(":checked", false)) {
+    // Triggered when the unchecked toggle has been checked
+    $("#scrollSwitch").prop("checked", true);
+    settings.useScroll = true;
+    state = [];
+  } else {
+    // Triggered when the checked toggle has been unchecked
+    $("#scrollSwitch").prop("checked", false);
+    settings.useScroll = false;
+    state = [];
+  }
+  setCookie("settings['useScroll']", settings.useScroll);
+}
+
+
 function toggleNotifications() {
   if ($("#notificationsSwitch").is(":checked", false)) {
     // Triggered when the unchecked toggle has been checked
@@ -170,6 +186,15 @@ function showPage() {
   } else {
     settings.screensaverDisable = false;
     $("#screensaverSwitch").prop("checked", false);
+  }
+
+  var useScroll = readCookie("settings['useScroll']");
+  if (useScroll === "false") {
+    settings.useScroll = false;
+    $("#scrollSwitch").prop("checked", false);
+  } else {
+    settings.useScroll = true;
+    $("#scrollSwitch").prop("checked", true);
   }
 
   // Set page fields to settings
@@ -326,36 +351,39 @@ function showIsPlaying(curZone) {
   if (state.line1 != curZone.now_playing.three_line.line1) {
     state.line1 = curZone.now_playing.three_line.line1;
     fixFontSize();
-    $("#line1")
-      .html(state.line1)
-      .simplemarquee({
+    $("#line1").html(state.line1);
+    if (settings.useScroll) {      
+      $("#line1").simplemarquee({
         cycles: Infinity,
         delayBetweenCycles: 5000,
         handleHover: false
       });
+  }
   }
 
   if (state.line2 != curZone.now_playing.three_line.line2) {
     state.line2 = curZone.now_playing.three_line.line2;
-    $("#line2")
-      .html(curZone.now_playing.three_line.line2)
-      .simplemarquee({
+    $("#line2").html(curZone.now_playing.three_line.line2);
+    if (settings.useScroll) {
+      $("#line2").simplemarquee({
         cycles: Infinity,
         delayBetweenCycles: 5000,
         handleHover: false
       });
-  }
+    }
+    }
 
   if (state.line3 != curZone.now_playing.three_line.line3) {
     state.line3 = curZone.now_playing.three_line.line3;
-    $("#line3")
-      .html(curZone.now_playing.three_line.line3)
-      .simplemarquee({
-        cycles: Infinity,
-        delayBetweenCycles: 5000,
-        handleHover: false
-      });
-  }
+    $("#line3").html(curZone.now_playing.three_line.line3);
+    if (settings.useScroll) {    
+      $("#line3").simplemarquee({
+            cycles: Infinity,
+            delayBetweenCycles: 5000,
+            handleHover: false
+          });
+      }
+    }
 
   if (state.title != curZone.now_playing.one_line.line1) {
     state.title = curZone.now_playing.one_line.line1;

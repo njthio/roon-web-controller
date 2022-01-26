@@ -8,3 +8,4 @@ config.json
 config/local.json
 
 package-lock.json
+.DS_Store
