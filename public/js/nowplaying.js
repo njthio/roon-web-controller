@@ -566,7 +566,7 @@ function showIsPlaying(curZone) {
         .attr("aria-disabled", false)
         .removeClass("buttonAvailable buttonInactive")
         .addClass("buttonActive")
-        .css("color", "#ff8e17");
+        .css("color", "#7578ff");
     } else if (state.Loop == "loop") {
       $("#buttonLoop")
         .html(getSVG("loop"))
@@ -579,7 +579,7 @@ function showIsPlaying(curZone) {
         .attr("aria-disabled", false)
         .removeClass("buttonAvailable buttonInactive")
         .addClass("buttonActive")
-        .css("color", "#ff8e17");
+        .css("color", "#7578ff");
     } else {
       $("#buttonLoop")
         .html(getSVG("loop"))
@@ -623,7 +623,7 @@ function showIsPlaying(curZone) {
         .attr("aria-disabled", false)
         .removeClass("buttonAvailable buttonInactive")
         .addClass("buttonActive")
-        .css("color", "#ff8e17");
+        .css("color", "#7578ff");
     } else {
       $("#buttonShuffle")
         .html(getSVG("shuffle"))
@@ -664,7 +664,7 @@ function showIsPlaying(curZone) {
         .attr("aria-disabled", false)
         .removeClass("buttonAvailable buttonInactive")
         .addClass("buttonActive")
-        .css("color", "#ff8e17");
+        .css("color", "#7578ff");
     } else {
       $("#buttonRadio")
         .html(getSVG("radio"))
