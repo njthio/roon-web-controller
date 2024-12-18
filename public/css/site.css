@@ -156,8 +156,8 @@ svg {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    -webkit-filter: opacity(33%) blur(20px);
-    filter: opacity(33%) blur(20px);
+    -webkit-filter: blur(100px) saturate(200%);
+    filter: blur(100px) saturate(200%);
     display: flex;
     text-align: center;
     justify-content: center;
