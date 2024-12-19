@@ -29,6 +29,8 @@ Additional visual tweaks for my own use include:
 - Rounded borders to cover art. 
 - Reduced size of track info area. 
 - Updated iOS webapp html to display black status bar instead of white on modern iOS installs.
+  
+![2024-12-18 at 17 45 17](https://github.com/user-attachments/assets/c323e44f-4cf1-4ce2-a466-fe525082548a)
 
 Install notes:
 I needed to install an older version of node.js. for a successful installation.
