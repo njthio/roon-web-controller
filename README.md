@@ -24,11 +24,11 @@ Bug fixes:
 
 ******
 Additional visual tweaks for my own use include:
--More diffuse background blur using the "Cover" option
--Adjustment to album art positioning in veritical mode. 
--Rounded borders to cover art. 
--Reduced size of track info area. 
--Updated iOS webapp html to display black status bar instead of white on modern iOS installs.
+- More diffuse background blur using the "Cover" option
+- Adjustment to album art positioning in veritical mode. 
+- Rounded borders to cover art. 
+- Reduced size of track info area. 
+- Updated iOS webapp html to display black status bar instead of white on modern iOS installs.
 
 Install notes:
 I needed to install an older version of node.js. for a successful installation.
