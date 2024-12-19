@@ -22,10 +22,17 @@ Visual tweaks:
 Bug fixes:
 - SVG icons size now much better even on newer Safari versions which had bad issues with earlier code
 
+******
+Additional visual tweaks for my own use include:
+-More diffuse background blur using the "Cover" option
+-Adjustment to album art positioning in veritical mode. 
+-Rounded borders to cover art. 
+-Reduced size of track info area. 
+-Updated iOS webapp html to display black status bar instead of white on modern iOS installs.
 
-End result: something that I myself enjoy using a bit better than the original.
-
-**NOTE: All the updates above are done just to make this more usable to myself. I've shared these in case someone else finds these usable, but I make no guarantees on them working on every possible setup out there. Also I have no interest in starting doing any other fixes or updates to the code.**
+Install notes:
+I needed to install an older version of node.js. for a successful installation.
+currently using v14.21.3
 
 Changes mentioned above have NOT been updated to the screenshots below. The rest of the README is from the original repo untouched.
 
